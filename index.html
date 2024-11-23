@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Puri Ridho</title>
+</head>
+
+<body>
+    <header>
+        <h1 href="#" class="logo">Puri Ridho</h1>
+        <nav class="nav-links">
+            <a href="#" class="active">Beranda</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#kamar">Kamar</a>
+            <a href="#lokasi">Lokasi</a>
+            <a href="#reservasi">Reservasi</a>
+        </nav>
+        <div class="menu" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+
+    <section class="kos-image">
+        <div class="image-container">
+            <img src="puri ridho.jpeg" alt="Puri Ridho" class="responsive-image">
+            <div class="overlay">
+                <div class="text">Kos Puri Ridho - Lokasi Strategis dan Nyaman</div>
+            </div>
+        </div>
+    </section>
+    
+    <div class="social-sidebar">
+        <a href="https://wa.me/089656428641" target="_blank" class="social-icon"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="https://www.instagram.com/kospuriridho_" target="_blank" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+        <a href="mailto:email@puriridho.com" target="_blank" class="social-icon"><i class="fa-solid fa-envelope"></i></a>
+    </div>
+    
+
+    <section class="photo-gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="kamar 1.png" class="gallery-img">
+                <div class="overlay">Kamar Utama</div>
+            </div>
+            <div class="gallery-item">
+                <img src="parkiran puri.png" class="gallery-img">
+                <div class="overlay">Area Parkir</div>
+            </div>
+            <div class="gallery-item">
+                <img src="lorong puri.png" class="gallery-img">
+                <div class="overlay">Lorong Kos</div>
+            </div>
+            <div class="gallery-item">
+                <img src="kamar mandi puri.png" class="gallery-img">
+                <div class="overlay">Kamar Mandi</div>
+            </div>
+            <div class="gallery-item">
+                <img src="depan puri.png" class="gallery-img">
+                <div class="overlay">Tampak Depan</div>
+            </div>
+            <div class="gallery-item">
+                <img src="samping puri.png" class="gallery-img">
+                <div class="overlay">Tangga</div>
+            </div>
+            <div class="gallery-item">
+                <img src="ruang tamu puri.jpg" class="gallery-img">
+                <div class="overlay">Ruang Tamu</div>
+            </div>
+            <div class="gallery-item">
+                <img src="samping depan puri.jpg" class="gallery-img">
+                <div class="overlay">Tampak Samping Depan</div>
+            </div>
+        </div>
+    
+        <!-- Modal -->
+        <div id="imageModal" class="modal">
+            <span class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+            <div id="caption"></div>
+        </div>
+    </section>
+    
+    <section class="info-grid" id="kamar">
+        <h2>Informasi Kos</h2>
+        <div class="grid-container">
+            <!-- Spesifikasi Tipe Kamar -->
+            <div class="grid-item">
+                <h3>Spesifikasi Tipe Kamar</h3>
+                <ul>
+                    <p><i class="fa-solid fa-house"></i> Ukuran: 4x3 meter</p>
+                    <p><i class="fa-solid fa-bed"></i> Fasilitas Kamar: Kasur, Bantal, Jendela</p>
+                    <p><i class="fa-solid fa-shower"></i> Fasilitas Kamar Mandi: K. Mandi Dalam, Kloset Jongkok, Ember mandi</p>
+                </ul>
+            </div>
+    
+            <!-- Peraturan Khusus -->
+            <div class="grid-item">
+                <h3>Peraturan Khusus</h3>
+                <ul>
+                    <p><i class="fa-solid fa-people-roof"></i> Tamu boleh menginap</p>
+                    <p><i class="fa-solid fa-people-robbery"></i> Maksimal 2 orang/kamar</p>
+                    <p><i class="fa-solid fa-people-arrows"></i> Boleh pasutri (dengan surat nikah)</p>
+                    <p><i class="fa-solid fa-baby"></i> Tidak boleh membawa anak</p>
+                    <p><i class="fa-solid fa-bolt"></i> Biaya tambahan untuk alat elektronik</p>
+                </ul>
+            </div>
+    
+            <!-- Fasilitas Umum -->
+            <div class="grid-item">
+                <h3>Fasilitas Umum</h3>
+                <ul>
+                    <p><i class="fa-solid fa-wifi"></i> Wi-Fi</p>
+                    <p><i class="fa-solid fa-house-flag"></i> Rooftop</p>
+                    <p><i class="fa-solid fa-couch"></i> Ruang Tamu</p>
+                    <p><i class="fa-solid fa-person-digging"></i> Pengurus Kos</p>
+                </ul>
+            </div>
+    
+            <!-- Fasilitas Parkir -->
+            <div class="grid-item">
+                <h3>Fasilitas Parkir</h3>
+                <ul>
+                    <p><i class="fa-solid fa-motorcycle"></i> Parkir Motor</p>
+                    <p><i class="fa-solid fa-car"></i> Parkir Mobil</p>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="lokasi" id="lokasi">
+        <div>
+            <h2>Lokasi dan Lingkungan Sekitar</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.6748649320366!2d108.23008947442688!3d-7.390282872753536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f57000f14e0d7%3A0xd96727390959fe3!2sKost%20Puri%20Ridho!5e0!3m2!1sen!2sid!4v1732073188574!5m2!1sen!2sid" width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <button class="btn" onclick="alert('Hubungi pengelola untuk informasi lengkap!')">Tanya Alamat Lengkap</button>
+    </section>
+
+    <section id="reservasi" class="reservasi-style">
+        <div>
+            <h2>Formulir Reservasi</h2>
+            <form name="reservasi-puri" method="POST">
+                <input type="text" name="nama" placeholder="Nama Anda" required>
+                <input type="email" name="email" placeholder="Email Anda" required>
+                <input type="date" name="tanggal" required>
+                <select class="option-kamar" name="kamar" required>
+                    <option value="Bulanan">Bulanan</option>
+                    <option value="Tahunan">Tahunan</option>
+                </select>
+                <button class="btn-reservasi" type="submit">Reservasi</button>
+            </form>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p>© 2024 Puri Ridho</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+        // Ambil elemen modal dan gambar
+        const modal = document.getElementById("imageModal");
+        const modalImg = document.getElementById("modalImage");
+        const captionText = document.getElementById("caption");
+        const closeBtn = document.querySelector(".close");
+
+        // Fungsi untuk membuka modal
+        document.querySelectorAll(".gallery-img").forEach(img => {
+            img.onclick = function () {
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+            };
+        });
+
+        // Fungsi untuk menutup modal
+        closeBtn.onclick = function () {
+            modal.style.display = "none";
+        };
+
+        // Tutup modal saat klik di luar gambar
+        window.onclick = function (event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+
+        document.getElementById("reservasi").addEventListener("submit", function(e) {
+            e.preventDefault();
+            alert("Reservasi Anda telah diterima. Kami akan menghubungi Anda segera!");
+        });
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwiSN4nNxeUf5y1KduqhtIfi1XUsK-5snKvo28sVcUuo5PRq7Tg5T2bZM7py5l-cgkp/exec'
+        const form = document.forms['reservasi-puri']
+    
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
